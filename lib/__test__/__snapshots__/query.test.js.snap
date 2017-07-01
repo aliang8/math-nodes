@@ -35,6 +35,19 @@ exports[`query getCoefficientsAndConstants 2 x y z 1`] = `
 exports[`query getCoefficientsAndConstants 2/3 + 3 + cos(4) 1`] = `
 {
     "others": [
+        {
+            "type": "Apply",
+            "op": {
+                "type": "Identifier",
+                "name": "cos"
+            },
+            "args": [
+                {
+                    "value": "4",
+                    "type": "Number"
+                }
+            ]
+        }
     ],
     "constants": [
         {
@@ -53,10 +66,6 @@ exports[`query getCoefficientsAndConstants 2/3 + 3 + cos(4) 1`] = `
         },
         {
             "value": "3",
-            "type": "Number"
-        },
-        {
-            "value": "4",
             "type": "Number"
         }
     ],
@@ -111,6 +120,27 @@ exports[`query getCoefficientsAndConstants 2x^3 + 3 1`] = `
     ],
     "coefficientMap": {
         "x^3": [
+            {
+                "value": "2",
+                "type": "Number"
+            }
+        ]
+    }
+}
+`;
+
+exports[`query getCoefficientsAndConstants 3x^2 * 2x^2 1`] = `
+{
+    "others": [
+    ],
+    "constants": [
+    ],
+    "coefficientMap": {
+        "x^2": [
+            {
+                "value": "3",
+                "type": "Number"
+            },
             {
                 "value": "2",
                 "type": "Number"
