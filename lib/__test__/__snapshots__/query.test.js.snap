@@ -236,6 +236,76 @@ exports[`query getVariableFactors 2x 1`] = `
 ]
 `;
 
+exports[`query getVariableFactors 2x^2 * y 1`] = `
+[
+    {
+        "type": "Apply",
+        "op": "pow",
+        "args": [
+            {
+                "type": "Identifier",
+                "name": "x"
+            },
+            {
+                "value": "2",
+                "type": "Number"
+            }
+        ]
+    },
+    {
+        "type": "Identifier",
+        "name": "y"
+    }
+]
+`;
+
+exports[`query getVariableFactors 2x^2 * z^2 + y^3 1`] = `
+[
+    {
+        "type": "Apply",
+        "op": "pow",
+        "args": [
+            {
+                "type": "Identifier",
+                "name": "x"
+            },
+            {
+                "value": "2",
+                "type": "Number"
+            }
+        ]
+    },
+    {
+        "type": "Apply",
+        "op": "pow",
+        "args": [
+            {
+                "type": "Identifier",
+                "name": "z"
+            },
+            {
+                "value": "2",
+                "type": "Number"
+            }
+        ]
+    },
+    {
+        "type": "Apply",
+        "op": "pow",
+        "args": [
+            {
+                "type": "Identifier",
+                "name": "y"
+            },
+            {
+                "value": "3",
+                "type": "Number"
+            }
+        ]
+    }
+]
+`;
+
 exports[`query getVariableFactors 2x^2 1`] = `
 [
     {
