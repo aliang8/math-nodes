@@ -210,11 +210,6 @@ exports[`query getCoefficientsAndConstants x^3 + y^3 + x y z + 3 1`] = `
 }
 `;
 
-exports[`query getVariableFactors (x)(y)(z) 1`] = `
-[
-]
-`;
-
 exports[`query getVariableFactors 2 x y z 1`] = `
 [
     {
