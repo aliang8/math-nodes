@@ -177,6 +177,45 @@ exports[`query getCoefficientsAndConstants 3x^2 * 2x^2 1`] = `
 }
 `;
 
+exports[`query getCoefficientsAndConstants x + 4 + 2^x + x 1`] = `
+{
+    "others": [
+        {
+            "type": "Apply",
+            "op": "pow",
+            "args": [
+                {
+                    "value": "2",
+                    "type": "Number"
+                },
+                {
+                    "type": "Identifier",
+                    "name": "x"
+                }
+            ]
+        }
+    ],
+    "constants": [
+        {
+            "value": "4",
+            "type": "Number"
+        }
+    ],
+    "coefficientMap": {
+        "x": [
+            {
+                "value": "1",
+                "type": "Number"
+            },
+            {
+                "value": "1",
+                "type": "Number"
+            }
+        ]
+    }
+}
+`;
+
 exports[`query getCoefficientsAndConstants x^3 + y^3 + x y z + 3 1`] = `
 {
     "others": [
@@ -201,6 +240,55 @@ exports[`query getCoefficientsAndConstants x^3 + y^3 + x y z + 3 1`] = `
             }
         ],
         "x y z": [
+            {
+                "value": "1",
+                "type": "Number"
+            }
+        ]
+    }
+}
+`;
+
+exports[`query getCoefficientsAndConstants z + 2*(y + x) + 4 + z 1`] = `
+{
+    "others": [
+        {
+            "type": "Apply",
+            "op": "mul",
+            "args": [
+                {
+                    "value": "2",
+                    "type": "Number"
+                },
+                {
+                    "type": "Apply",
+                    "op": "add",
+                    "args": [
+                        {
+                            "type": "Identifier",
+                            "name": "y"
+                        },
+                        {
+                            "type": "Identifier",
+                            "name": "x"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "constants": [
+        {
+            "value": "4",
+            "type": "Number"
+        }
+    ],
+    "coefficientMap": {
+        "z": [
+            {
+                "value": "1",
+                "type": "Number"
+            },
             {
                 "value": "1",
                 "type": "Number"
